@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title></title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-primary" data-bs-spy="scroll" data-bs-target=".navbar">
+    <script src="js/onLoad.js"></script>
+    <nav class="navbar navbar-expand-lg bg-secondary fixed-top shadow p-3 navbar-dark fixed-top autohide w-100">
+        <div class="container-fluid">
+            <a class="navbar-brand text-tprimary fs-2" href="#">Ousama</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon text-other"></span>
+            </button>
+            <div class="collapse navbar-collapse w-100" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item zoom-1">
+                        <a class="nav-link active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item zoom-1">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item zoom-1">
+                        <a class="nav-link" href="#work">Work</a>
+                    </li>
+                    <li class="nav-item zoom-1">
+                        <a class="nav-link" href="#languages">Technologies</a>
+                    </li>
+                </ul>
+                <button class="btn btn-outline-tsecondary px-5 ms-auto"
+                    onclick="window.location.href = '#contact'">Message me</button>
+            </div>
+
+        </div>
+    </nav>
+    <main>
+        <section class="section d-flex" id="home">
+            <div class="container my-auto">
+                <h1 class="display-1 text-tprimary">Ousama Alhennawi</h1>
+                <h1 class="text-tsecondary">Experienced web developer, and Python programming</h1>
+                <h5 class="text-tsecondary">You can call me Osama. I am a web developer and a Python
+                    developer with 1+ year of experience in the programming field and I make several kinds of projects
+                    which vary from making responsive websites to designing an API system, I am also experienced in the
+                    database managing field with SQLite databases.</h5>
+                <button class="btn btn-outline-tprimary px-5 mt-4"
+                    onclick="window.location.href = '#work'">Previous Work</button>
+            </div>
+        </section>
+        <section class="section d-flex" id="about">
+            <div class="container my-auto">
+                <h1 class="display-1 text-tprimary">About me</h1>
+                <h1 class="text-tsecondary">A 14 years old developer born in the UAE...</h1>
+                <h5 class="text-tsecondary">I'm Ousama and I live in the UAE. I love programming and I take it as a hobby. My favorite programming language is Python and I've accomplished learning all of the important fundamentals of it. I also know some front-end development with Bootstrap, HTML and CSS</h5>
+                <button class="btn btn-outline-tprimary px-5 mt-4"
+                onclick="window.location.href = '#contact'">Let's get in contact</button>
+            </div>
+        </section>
+        <section class="section d-flex" id="work">
+            <div class="container my-5">
+                <h1 class="display-1 text-tprimary text-center">My work</h1>
+                <h1 class="text-tsecondary text-center">Projects I have made with multiple languages</h1>
+                <div class="row gap-4 my-5">
+                    <div class="col">
+                        <div class="card bg-primary text-center text-tsecondary">
+                            <img src="image/macromolecules.png" alt="" class="d-block mx-auto card-img-top">
+                            <div class="card-header">
+                                <h1 class="card-title text-tprimary">Biology Project</h1>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-text">This is a responsive website I made about Macromolecules for a biology project in my school. Was made using Bootstrap, HTML 5 and CSS</h5>
+                                <a target="_blank" href="https://macromolecules.osam7a.repl.co/responsive" class="btn btn-outline-tprimary px-5">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-primary text-center text-tsecondary">
+                            <img src="image/minesweeper.png" alt="" class="d-block w-50 mx-auto card-img-top">
+                            <div class="card-header">
+                                <h1 class="card-title text-tprimary">Minesweeper</h1>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-text">A game created using Tkinter and Python as a canidate for TDRA's UAE competition, which got the #1 prize in the competition.</h5>
+                                <a target="_blank" href="https://github.com/osam7a/Minesweeper" class="btn btn-outline-tprimary px-5">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card bg-primary text-center text-tsecondary">
+                            <img src="image/portfoilo.png" alt="" class="d-block mx-auto card-img-top">
+                            <div class="card-header">
+                                <h1 class="card-title text-tprimary">Portfoilo</h1>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-text">This responsive portfoilo was created using Bootstrap, CSS and HTML 5</h5>
+                                <a href="/" class="btn btn-outline-tprimary px-5">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center">
+                    <a href="https://github.com/osam7a" class="btn btn-outline-tsecondary px-5">Checkout my Github</a>
+                </div>
+            </div>
+        </section>
+        <section class="section d-flex" id="languages">
+            <div class="container mt-5">
+                <h1 class="display-1 text-tprimary text-center mt-5">Technologies</h1>
+                <h1 class="text-tsecondary text-center">The technologies that I have learned.</h1>
+                <div class="row mt-4 gap-4">
+                    <div class="col-lg">
+                        <div class="card bg-primary text-tsecondary text-center zoom-1">
+                            <img src="image/javascript.png" alt="" class="w-50 mx-auto d-block rounded card-img-top"> 
+                            <div class="card-header">
+                                <h2 class="card-title">Javascript</h2>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">I have basic experience on javascript for programming websites.</p>
+                            </div>
+                            <div class="card-footer">
+                                <h3 class="card-title text-secondary">Entry-level</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg mt-5">
+                        <div class="card bg-primary text-tsecondary text-center zoom-1">
+                            <img src="image/python.png" alt="" class="w-50 mx-auto d-block card-img-top">
+                            <div class="card-header">
+                                <h2 class="card-title">Python</h2>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Python was and still is my favorite programming language between all, as I used it for the first time since 3 years ago. I am able to make high-quality APIs for databases using SQLite and Flask webservers.</p>
+                            </div>
+                            <div class="card-footer">
+                                <h3 class="card-title text-secondary">Expert</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg">
+                        <div class="card bg-primary text-tsecondary text-center zoom-1">
+                            <img src="image/3B5.png" alt="" class="w-100 mx-auto d-block card-img-top"> 
+                            <div class="card-header">
+                                <h2 class="card-title">HTML, CSS, Bootstrap</h2>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">I learned HTML and CSS about 1 year ago, and I've been practicing bootstrap on multiple projects in web development.</p>
+                            </div>
+                            <div class="card-footer">
+                                <h3 class="card-title text-secondary">Intermediate</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section d-flex" id="contact">
+            <div class="container my-auto">
+                <h1 class="display-1 text-tprimary">Let's get in touch</h1>
+                <h1 class="text-tsecondary">Click on one of my socials to message me</h1>
+                <a href="https://t.me/osamaalhinawi" target="_blank" class="btn btn-outline-telegram flex-fill mx-2">Telegram</a>
+                <a href="https://github.com/osam7a" target="_blank" class="btn btn-github flex-fill mx-2">Github</a>
+                <a href="https://discord.com/users/761159873194491915" target="_blank" class="btn btn-outline-discord flex-fill mx-2">Discord</a>
+            </div>
+        </section>
+    </main>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <script src="js/hidenav.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</body>

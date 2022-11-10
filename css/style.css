@@ -1,0 +1,29 @@
+::-webkit-scrollbar {
+    display: none;
+}
+
+.zoom-1 {
+    transition: .2s;
+}
+.zoom-1:hover {
+    transform: scale(1.05);
+}
+
+.scrolled-down{
+    transform:translateY(-100%); transition: all 0.3s ease-in-out;
+}
+.scrolled-up{
+    transform:translateY(0); transition: all 0.3s ease-in-out;
+}
+
+.section {
+    min-height: 100vh;
+}
+
+.zoom-2 {
+    transition: .2s;
+}
+
+.zoom-2:hover {
+    transform: scale(1.1);
+}
