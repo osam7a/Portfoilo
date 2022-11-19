@@ -1,29 +1,272 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
-.zoom-1 {
-    transition: .2s;
-}
-.zoom-1:hover {
-    transform: scale(1.05);
+.body-bg {
+  background-color: var(--bs-gray-400);
+  font-family: "Roboto Condensed";
 }
 
-.scrolled-down{
-    transform:translateY(-100%); transition: all 0.3s ease-in-out;
+.yellow-hover {
+  transition: 0.3s;
 }
-.scrolled-up{
-    transform:translateY(0); transition: all 0.3s ease-in-out;
+
+.yellow-hover:hover {
+  color: var(--bs-yellow);
+}
+
+.active {
+  color: var(--bs-yellow) !important;
+}
+
+.mainbg {
+  background: linear-gradient(
+      to right,
+      rgba(245, 245, 245, 0.8),
+      rgba(245, 245, 245, 0.8)
+    ),
+    url("../image/background.svg");
 }
 
 .section {
-    min-height: 100vh;
+  padding-top: 106px;
 }
 
-.zoom-2 {
-    transition: .2s;
+.button-p {
+  padding-left: 5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-right: 5rem;
 }
 
-.zoom-2:hover {
-    transform: scale(1.1);
+.btn-primary {
+  background-color: var(--bs-yellow);
+  border-color: var(--bs-yellow);
+  color: var(--bs-dark);
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+.btn-outline-primary {
+  border-color: var(--bs-yellow);
+  color: var(--bs-dark);
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+.btn-outline-primary:hover {
+  background-color: var(--bs-yellow);
+  border-color: var(--bs-yellow);
+  color: var(--bs-dark);
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+.btn-outline-primary:active {
+  background-color: var(--bs-yellow) !important;
+  border-color: var(--bs-yellow) !important;
+  color: var(--bs-dark) !important;
+  filter: brightness(0.9);
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+.btn-primary:hover {
+  background-color: var(--bs-yellow);
+  border-color: var(--bs-yellow);
+  color: var(--bs-dark);
+  transform: translateY(-5px);
+}
+
+.btn-primary:active {
+  transition: 0s;
+  background-color: var(--bs-yellow) !important;
+  border-color: var(--bs-yellow) !important;
+  color: var(--bs-dark) !important;
+  filter: brightness(0.9);
+}
+.btn-primary:focus-visible {
+  background-color: var(--bs-yellow) !important;
+  border-color: var(--bs-yellow) !important;
+  color: var(--bs-dark) !important;
+}
+
+.sec-title {
+  border-bottom: 3px solid;
+  border-radius: 10px;
+  border-image: linear-gradient(
+      to right,
+      transparent,
+      var(--bs-yellow),
+      transparent
+    )
+    100% 1;
+}
+
+.link {
+  font-family: inherit;
+  text-decoration: none;
+  color: inherit !important;
+  font-weight: 700;
+  transition: 0.3s;
+}
+
+.link:hover {
+  color: var(--bs-yellow) !important;
+}
+
+.skill {
+  background-color: var(--bs-gray-300);
+  border-radius: 10px;
+  display: inline-block;
+  font-size: 1.5rem;
+  padding: 1rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  margin: 0.25rem;
+  transition: 0.3s;
+}
+
+.skill:hover {
+  background-color: var(--bs-gray-400);
+  transform: translateY(-5px);
+}
+
+.prjcts {
+  margin-top: 7em;
+  margin-bottom: 7em;
+}
+
+.btn-outline-telegram {
+  border-color: #0088cc;
+  color: #0088cc;
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+.btn-outline-telegram:hover {
+  background-color: #0088cc;
+  border-color: #0088cc;
+  color: var(--bs-light);
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+.btn-outline-telegram:active {
+  background-color: #0088cc !important;
+  border-color: #0088cc !important;
+  color: var(--bs-light) !important;
+  filter: brightness(0.9);
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+.btn-outline-github {
+  border-color: #333;
+  color: #333;
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+.btn-outline-github:hover {
+  background-color: #333;
+  border-color: #333;
+  color: var(--bs-light);
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+.btn-outline-github:active {
+  background-color: #333 !important;
+  border-color: #333 !important;
+  color: var(--bs-light) !important;
+  filter: brightness(0.9);
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+.btn-outline-discord {
+  border-color: #7289da;
+  color: #7289da;
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+.btn-outline-discord:hover {
+  background-color: #7289da;
+  border-color: #7289da;
+  color: var(--bs-light);
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+.btn-outline-discord:active {
+  background-color: #7289da !important;
+  border-color: #7289da !important;
+  color: var(--bs-light) !important;
+  filter: brightness(0.9);
+  font-size: 1.5rem;
+  transition: 0.5s;
+}
+
+.arrows {
+  width: 60px;
+  height: 72px;
+  position: absolute;
+  left: 50%;
+  margin-left: -30px;
+  bottom: 4%;
+}
+
+.arrows path {
+  stroke: var(--bs-dark);
+  fill: transparent;
+  stroke-width: 1px;
+  animation: arrow 2s infinite;
+  -webkit-animation: arrow 2s infinite;
+}
+
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/ {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.arrows path.a1 {
+  animation-delay: -1s;
+  -webkit-animation-delay: -1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+  animation-delay: -0.5s;
+  -webkit-animation-delay: -0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {
+  animation-delay: 0s;
+  -webkit-animation-delay: 0s; /* Safari 和 Chrome */
 }
